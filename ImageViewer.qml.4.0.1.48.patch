@@ -1,0 +1,42 @@
+--- /usr/lib/qt5/qml/Sailfish/Gallery/ImageViewer.qml.orig
++++ /home/defaultuser/SailFish/usr/lib/qt5/qml/Sailfish/Gallery/ImageViewer.qml-new
+@@ -56,6 +56,13 @@
+         asynchronous: true
+         cache: false
+
++        MouseArea {
++            anchors.fill: parent
++            onClicked: {
++                largePhoto.source = photo.source
++            }
++        }
++
+         onStatusChanged: {
+             if (status == Image.Error) {
+                 errorLabel = errorLabelComponent.createObject(flickable)
+@@ -75,12 +82,8 @@
+         Behavior on opacity { FadeAnimation{} }
+     }
+
+-    Image {
++    AnimatedImage {
+         id: largePhoto
+-        sourceSize {
+-            width: 3264
+-            height: 3264
+-        }
+         cache: false
+         asynchronous: true
+         anchors.fill: parent
+@@ -104,7 +107,10 @@
+             width: flickable.width - (2 * Theme.paddingLarge)
+             height: flickable.height - (2 * Theme.paddingLarge)
+
+-            onClicked: flickable.clicked()
++            onClicked: {
++                largePhoto.source = photo.source
++                flickable.clicked()
++            }
+         }
+     }
+
