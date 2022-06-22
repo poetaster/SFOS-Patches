@@ -1,0 +1,25 @@
+--- /usr/lib/qt5/qml/Sailfish/Silica/Background/ImageWallpaper.qml
++++ /home/defaultuser/SailFish/usr/lib/qt5/qml/Sailfish/Silica/Background/ImageWallpaper.qml
+@@ -9,16 +9,16 @@
+ import Sailfish.Silica.private 1.0
+ import Sailfish.Silica.Background 1.0
+
+-Image {
++AnimatedImage {
+     property url imageUrl
+     property string wallpaperFilter
+
+     asynchronous: AnimatedLoader.asynchronous
+-    sourceSize.height: Screen.height
+-    cache: false
+-
++    // sourceSize.height: Screen.height
++    cache: true
++    smooth: false
+     source: imageUrl != ""
+-            ? "image://silica-square/" + encodeURIComponent(imageUrl)
++            ? imageUrl
+             : ""
+
+     AnimatedLoader.status: {
+
