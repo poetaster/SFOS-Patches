@@ -1,0 +1,14 @@
+{
+    "translationCatalog"        : "ambience-industrial",
+    "displayName"               : "Industrial",
+    "wallpaper"                 : "yellow_industrial.gif",
+    "highlightColor"            : "#FFFEf27F",
+    "secondaryHighlightColor"   : "#FFC4BA62",
+    "primaryColor"              : "#FFFFFFFF",
+    "secondaryColor"            : "#FFBABABA",
+    "ringerVolume"              : 80,
+    "favorite"                  : true,
+    "colorScheme"               : "lightondark",
+    "timestamp"                 : "2021-01-25T00:00:01",
+    "version"                   : 3
+}

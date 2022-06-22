@@ -1,0 +1,13 @@
+{
+    "translationCatalog"        : "ambience-alien-moss",
+    "displayName"               : "Alien Moss",
+    "wallpaper"                 : "alien_moss.gif",
+    "highlightColor"            : "#ffbffe7f",
+    "secondaryHighlightColor"   : "#ff88cb66",
+    "primaryColor"              : "#FFFFFFFF",
+    "secondaryColor"            : "#FFBABABA",
+    "ringerVolume"              : 80,
+    "favorite"                  : true,
+    "timestamp"                 : "2021-10-01T03:00:00",
+    "version"                   : 2
+}

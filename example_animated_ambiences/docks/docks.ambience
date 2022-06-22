@@ -1,0 +1,13 @@
+{
+    "translationCatalog"        : "ambience-docks",
+    "displayName"               : "Docks",
+    "wallpaper"                 : "violet_dock.gif",
+    "highlightColor"            : "#ffff9481",
+    "secondaryHighlightColor"   : "#ffd6735e",
+    "primaryColor"              : "#FFFFFFFF",
+    "secondaryColor"            : "#FFBABABA",
+    "ringerVolume"              : 80,
+    "favorite"                  : false,
+    "timestamp"                 : "2015-01-01T06:00:00",
+    "version"                   : 2
+}
